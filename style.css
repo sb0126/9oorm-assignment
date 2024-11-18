@@ -1,0 +1,209 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* --------------------------- CSS reset tool */
+
+
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: rgba(255,255,255, 0.9);
+ }
+  
+
+
+body {
+    position: relative;
+    background-color: #111111;
+
+}
+.main-title-image-container {
+    width: 100%;
+    height: 580px;
+    z-index: -1;
+    position:absolute;
+}
+.main-title-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+header {
+    width: 100%;
+    height: 580px;
+    display: grid;
+    grid-template-rows:60px auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav > * {
+    height: 30px;
+    width: 30px;   
+    margin: 0 10px;
+}
+
+.profile-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.header-netflix-icon {
+    background-color: rgba(0, 0, 0, 0);
+color: rgb(229, 9, 20);
+cursor: pointer;
+display: inline-block;
+font-size: 26px;
+font-style: normal;
+font-weight: bold;
+height: 25px;
+line-height: 25px;
+margin-right: 25px;
+text-decoration: none;
+text-decoration-line: none;
+text-transform: none;
+
+vertical-align: middle;
+width: 92.5px;
+word-break: keep-all;
+cursor: pointer;
+
+}
+section {
+    display: grid;
+    grid-template-columns: 350px auto;
+}
+section > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+    padding: 20px;
+}
+
+
+.main-title-name {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.main-title-playButton-container {
+    padding: 5px 0;
+    display: flex;
+}
+.main-title-playButton-container div:first-child {
+    margin-right: 20px;
+}
+.main-title-playButton-container div {
+    padding: 5px 30px;
+    background-color: rgba(74, 71, 71, 0.25);
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.main-title-playButton-container div:hover {
+    background-color: rgba(74, 71, 71, 0.5);
+}
+
+.main-title-playButton-container div:active {
+    background-color: rgba(74, 71, 71, 0.75);
+}
+.main-title-playButton-container + p {
+    margin-top: 12px;
+    line-height: 16px;
+    font-size: 12px;
+} 
+main {
+    width: 100%;
+    box-shadow: 0 -60px 40px #111111;
+}
+.movie-collection-module > h2 {
+    margin: 10px;
+    font-weight: 800;
+    font-size: 26px;
+}
+.movie-collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.movie-container {
+    width: 135px;
+    height: 200px;
+    margin: 10px
+}
+.movie-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    transition: transform 1s ease;
+    cursor: pointer;
+}
+.movie-container img:hover {
+    transform: translateY(-40px) scale(1.2);
+}
+
+hr {
+    margin: 30px 0;
+    border-color: black;
+    opacity: 0.5;
+}
